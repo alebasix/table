@@ -1,10 +1,49 @@
 * {
   box-sizing: border-box;
 }
-#table {
 
+
+article {
+  background-color: grey;
+  height: 100vh;
+  width: 90vw;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-td,tr {
+table{
+margin-left: auto;
+margin-right: auto;
+height: 100vh;
+width: 99%;
+border: 10px solid transparent;
+}
+
+td,
+tr {
   border: 1px solid black;
+  text-align: center;
+  padding: 3vh;
+  font-size: 20px;
 }
+
+tbody>tr>td:nth-child(1) {
+  width: 30%;
+  /* Все по вертикали 1 колонка */
+  }
+    
+  tbody tr:nth-child(8n+1) {
+    height: 30vh;
+    /* Все по горизонтали 1 колонка */
+  }
+  
+  
+  tbody tr:nth-child(1n) td:first-child() {
+ background-color: black;
+  }
+  button {
+    font-size: 20px;
+    background-color: #dbdbdb;
+    padding: 15px 50px ;
+    /* возможный вариант кнопки */
+  }
